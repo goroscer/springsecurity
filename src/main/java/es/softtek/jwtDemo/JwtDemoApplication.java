@@ -18,7 +18,7 @@ public class JwtDemoApplication {
 		SpringApplication.run(JwtDemoApplication.class, args);
 	}
 	
-	@EnableWebSecurity
+/*	@EnableWebSecurity
 	@Configuration
 	class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
@@ -30,7 +30,7 @@ public class JwtDemoApplication {
 				.antMatchers(HttpMethod.POST, "/user").permitAll()
 				.anyRequest().authenticated();
 		}
-	}
+	}*/
 
 }
 

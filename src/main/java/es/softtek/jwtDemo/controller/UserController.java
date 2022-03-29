@@ -23,13 +23,14 @@ public class UserController {
 		String token = getJWTToken(username);
 		User user = new User();
 		user.setUser(username);
-		user.setToken(token);		
+		user.setToken(token);
+		user.setPwd(pwd);
 		return user;
 		
 	}
 
 	private String getJWTToken(String username) {
-		String secretKey = "mySecretKey";
+		String secretKey = "pepegorostiaga";
 		List<GrantedAuthority> grantedAuthorities = AuthorityUtils
 				.commaSeparatedStringToAuthorityList("ROLE_USER");
 		
